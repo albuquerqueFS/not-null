@@ -1,0 +1,161 @@
+.config {
+    padding-bottom: 6%;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button__icon {
+    height: 2rem;
+    margin: 0 1rem;
+}
+
+.newcard {
+    margin-top: 10%;
+    width: 65rem;
+    box-shadow: 1px 1px 14px rgb(194, 194, 194);
+    font-family: 'Montserrat';
+    color: white;
+    display: block;
+}
+
+.card__presenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__details {
+    opacity: 0;
+    height: 0;
+    background-color: rgb(241, 241, 241);
+    transition: .5s;
+}
+
+.card__details p {
+    color: rgb(43, 43, 43);
+    padding: 1rem 1rem;
+}
+
+.newcard__absolute {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newcard__title {
+    color: green;
+    font-weight: 500;
+    font-size: 4rem;
+    text-shadow: 1px 1px 12px black; ;
+}
+
+.newcard__button {
+    margin-top: 15rem;
+    border: 0;
+    color: white;
+    padding: 1rem 3rem;
+    font-family: 'Muli';
+    font-size: 1rem;
+    background-color: black;
+}
+
+.details__title {
+    font-size: 1.5rem;
+}
+
+.details__github {
+    color: black;
+    margin: 1rem 1rem;
+}
+
+.details__github:hover {
+    cursor: pointer;
+}
+
+.details__github img {
+    height: 14px;
+    margin-right: 5px;
+}
+
+.blur_it {
+    transition: 1s;
+    width: 100%;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+.clear_it {
+    transition: 1s;
+    width: 100%;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.gone {
+    transition: .25s;
+    opacity: 0;
+    display: none;
+}
+
+@media only screen and (max-width: 640px) {
+    .projects {
+        margin-top: 5%;
+    }
+
+    .newcard {
+        margin-top: 25%;
+        width: 25rem;
+    }
+    
+    .newcard__title {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .newcard__button {
+        margin-top: 1rem;
+        padding: 0.5rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    .card__details p {
+        color: rgb(43, 43, 43);
+        padding: 1rem 1rem;
+    }
+
+    .details__title {
+        font-size: 1rem;
+    }
+
+    .details__github {
+        color: black;
+        margin: 1rem 1rem;
+    }
+    .details__github img {
+        height: 14px;
+        margin-right: 5px;
+    }
+
+    .details__description {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 1800px) {
+    
+}

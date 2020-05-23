@@ -1,0 +1,24 @@
+<div class="particles-wrapper">
+  <canvas repulse-particles number={{number}}></canvas>
+</div>
+
+<nav class="navbar">
+  <div class="navbar--container">
+
+    <div class="icons">
+      <img (click)="dropMenu()" src="../assets/img/hamburg-icon.svg">
+      <p routerLink="">NOT-NULL</p>
+    </div>
+
+    <div *ngIf="menuState" class="menu">
+      <ul class="menu--list">
+        <li (click)="dropMenu()" routerLink="/me">Me</li>
+        <!-- <li (click)="dropMenu()" routerLink="/blog">Blog</li> -->
+        <li (click)="dropMenu()" routerLink="/projects">Projects</li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
