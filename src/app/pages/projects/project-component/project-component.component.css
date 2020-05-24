@@ -21,6 +21,7 @@
     font-family: 'Montserrat';
     color: white;
     display: block;
+    animation: fadeIn 1s;
 }
 
 .card__presenter {
@@ -198,5 +199,15 @@
 
     .details__description {
         font-size: .8rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
